@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){ 
+    int INTIAL_BALANCE=1000;
+    int transactions[] = {200, -150, -500, -400, -50, -200, 300};
+    int tobeprocessed[10];
+    
+    for(int i=0;i<7;i++)
+    {
+       int transaction = transactions[i]; 
+       if(transaction>=0){
+        if (transaction >= 0) {
+         transaction += INTIAL_BALANCE ;
+         printf("the transcation/withdrawal is:",transaction);
+         }
+        if (transaction < 0) {
+        if (INTIAL_BALANCE < (-transaction)) {
+            printf("Invalid");
+            tobeprocessed[10] = transaction;
+            }
+        }
+        }
+        
+ }
+}
